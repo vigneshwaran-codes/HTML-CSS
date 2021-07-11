@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap");
+
+.layout {
+  background: linear-gradient(#136a8a, #267871);
+}
+
+.username input {
+  border-radius: 4px;
+  height: 25px;
+}
+
+form input:hover {
+  background: linear-gradient(#2193b0, #6dd5ed);
+}
+form textarea:hover {
+  background: linear-gradient(#11998e, #38ef7d);
+}
+form select:hover {
+  background: linear-gradient(#d3cce3, #e9e4f0);
+}
+p,
+h5 {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.box_main {
+  background: linear-gradient(#005c97, #363795);
+  height: 125px;
+}
+.box_main p {
+  text-align: center;
+  margin: auto;
+  padding: 40px;
+  color: #fff;
+  font-size: 35px;
+}
+
+.container {
+  height: 125px;
+  position: relative;
+  background: linear-gradient(#005c97, #363795);
+}
+
+.radio {
+  font-size: 20px;
+}
+button {
+  font-size: 110%;
+  background: rgb(28, 184, 65);
+  color: #fff;
+  border-radius: 5px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  padding: 35px 0 50px 0;
+  width: 20%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.button:hover {
+  background-color: rgb(30, 180, 80);
+  color: #fff;
+  cursor: pointer;
+}
+.comments {
+  padding: 30px;
+}
+
+form {
+  margin: 10px;
+  padding: 30px;
+}
+
+table tr {
+  background-color: #dcdad7;
+}
+
+th:nth-child(1) {
+  background-color: #186d83;
+}
+
+@media screen and (max-width:767px)
+{ 
+  .layout .box_main p{
+    font-size: 25px;
+  }
+  form .table tr th td {
+   width: 100%;
+  }
+  form .username input{
+    width: 100%;
+  }
+  form .comments textarea{
+    width: 100%;
+  }
+
+  form .comments p{
+    font-size: 15px;
+  }
+  form .comments .two p{
+    font-size:10px;
+  }
+  table {
+    font-size: 10px;
+  }
+  button{
+    width:80%;
+  }
+}
+
+@media screen and(min-width:768px){
+  .layout{
+   max-width: 991px;
+  }
+}
+
+@media screen and (min-width:992px) 
+{
+ .layout{
+  max-width:1199px;
+ } 
+}
+
+@media screen and (min-width:1200px){
+  .layout{
+    max-width:1600px;
+  }
+}
